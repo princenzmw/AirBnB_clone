@@ -56,24 +56,22 @@ article:nth-child(4) {
 .number_bathrooms {
     width: 100px;
     text-align: center;
+    /*Background*/
+    padding-top: 55px;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center top;
 }
 
-.bgdiv {
-    width: 50%;
-    height: 50px;
-    margin: 0 auto;
-    background-size: cover;
-}
-
-.max_guest .bgdiv {
+.max_guest {
     background-image: url(../images/icon_group.png);
 }
 
-.number_rooms .bgdiv {
+.number_rooms {
     background-image: url(../images/icon_bed.png);
 }
 
-.number_bathrooms .bgdiv {
+.number_bathrooms {
     background-image: url(../images/icon_bath.png);
 }
 
