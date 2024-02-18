@@ -1,0 +1,25 @@
+footer {
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 768px) {
+    footer {
+        background-color: #ffffff;
+        max-height: 50px;
+        max-width: 100%;
+        position: fixed;
+        bottom: 0;
+        border-top: 1px solid #CCCCCC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
