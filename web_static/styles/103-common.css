@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular,
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    ;
+    max-width: 100vw;
+}
+
+main.container {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+@media all and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0 10px;
+        color: #484848;
+        font-size: 14px;
+        font-family: Circular,
+            "Helvetica Neue",
+            Helvetica,
+            Arial,
+            sans-serif;
+        ;
+        width: 100vw;
+    }
+
+    main.container {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
