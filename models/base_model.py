@@ -25,13 +25,13 @@ class BaseModel:
                     self.__dict__[k] = datetime.strptime(v, tform)
                 else:
                     self.__dict__[k] = v
-        # else:
-        #     models.storage.new(self)
+        else:
+            models.storage.new(self)
 
     def save(self):
         """Update updated_at with the current datetime."""
         self.updated_at = datetime.today()
-        # models.storage.save()
+        models.storage.save()
 
     def to_dict(self):
         """Return the dictionary of the BaseModel instance.
@@ -39,11 +39,11 @@ class BaseModel:
         Includes the key/value pair __class__ representing
         the class name of the object.
         """
-        ret_dict = self.__dict__.copy()
-        ret_dict["created_at"] = self.created_at.isoformat()
-        ret_dict["updated_at"] = self.updated_at.isoformat()
-        ret_dict["__class__"] = self.__class__.__name__
-        return ret_dict
+        rdict = self.__dict__.copy()
+        rdict["created_at"] = self.created_at.isoformat()
+        rdict["updated_at"] = self.updated_at.isoformat()
+        rdict["__class__"] = self.__class__.__name__
+        return rdict
 
     def __str__(self):
         """Return the print/str representation of the BaseModel instance."""
